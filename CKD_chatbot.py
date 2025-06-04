@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_chat import message
-from timeit import default_timer as timer
 from langchain_community.graphs import Neo4jGraph
 from langchain.chains import GraphCypherQAChain
 from langchain.prompts.prompt import PromptTemplate
