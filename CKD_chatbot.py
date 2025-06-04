@@ -117,7 +117,6 @@ def conclusionAnswer(firstResult, question):
 
 
 st.set_page_config(layout="wide")
-
 if "user_msgs" not in st.session_state:
     st.session_state.user_msgs = []
 if "system_msgs" not in st.session_state:
@@ -160,4 +159,9 @@ if user_input:
             for i in range(len(st.session_state["system_msgs"]) - 1, -1, -1):
                 message(st.session_state["system_msgs"][i], key=str(i) + "_assistant")
                 message(st.session_state["user_msgs"][i], is_user=True, key=str(i) + "_user")
+
+
+
+
+
 
